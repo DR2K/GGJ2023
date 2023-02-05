@@ -1,21 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class camDadMovement : MonoBehaviour
-{
-    public Transform bus;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        transform.position = bus.transform.position;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        transform.rotation = bus.transform.rotation;
-        transform.position = bus.transform.position;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b43da61b1244391a8a080df7bce18564be9f83ef4e9fcf4a11279fc97da7e2ec
+size 465
