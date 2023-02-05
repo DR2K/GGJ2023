@@ -7,6 +7,9 @@ using UnityEngine.UI;
 
 public class busmovement : MonoBehaviour
 {
+    
+    
+    
     public float speed = 0;
     private Rigidbody rbBus;
 
@@ -46,11 +49,23 @@ public class busmovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (Input.GetKey(KeyCode.S))
+        {
+            currentBreakingForce = breakingForce;
+        }
+        else
+        {
+            currentBreakingForce = 0f;
+        }
         
-        
-        
-        Vector3 mvmnt = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        
-        rbBus.AddForce(mvmnt*speed);
+        if (Input.GetKey(KeyCode.W))
+        {
+            currentAcceleration = acceleration;
+        }
+        else
+        {
+            currentAcceleration = 0f;
+        }
+
     }
 }

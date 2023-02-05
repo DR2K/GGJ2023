@@ -31,6 +31,8 @@ public class cameramouse : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y + 5, transform.position.z);
         }
 
+        transform.LookAt(transform.parent.transform.position);
+        
         float rotateHorizontal = Input.GetAxis("Mouse X");
         float rotateVertical = Input.GetAxis("Mouse Y");
         if (rotateVertical != 0 || rotateHorizontal != 0)
@@ -47,6 +49,5 @@ public class cameramouse : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
     }
 }
