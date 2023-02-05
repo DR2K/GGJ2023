@@ -75,6 +75,10 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 Assets/Barmetler
+Assets/LowPoly Rocks
+Assets/polyperfect
+Assets/SimpleNaturePack
+Assets/Surfaces
 
 # Folder view configuration files
 .DS_Store
