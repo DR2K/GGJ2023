@@ -6,7 +6,7 @@ using UnityEngine;
 public class cameramouse : MonoBehaviour
 {
     public float sensitivity = 100f;
-    private float cameraDistance = 10f;
+    private float cameraDistance = 20f;
     private float timer = 0f;
 
     // Start is called before the first frame update
@@ -28,7 +28,7 @@ public class cameramouse : MonoBehaviour
             Transform parent = transform.parent.transform;
             transform.position = parent.position - parent.forward * cameraDistance;
             transform.LookAt(parent.position);
-            transform.position = new Vector3(transform.position.x, transform.position.y + 5, transform.position.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y + 8, transform.position.z);
         }
 
         transform.LookAt(transform.parent.transform.position);
