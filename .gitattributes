@@ -290,3 +290,4 @@ Assets filter=lfs diff=lfs merge=lfs -text
 Assets/TextMesh[[:space:]]Pro filter=lfs diff=lfs merge=lfs -text
 Assets/TextMesh[[:space:]]Pro.meta filter=lfs diff=lfs merge=lfs -text
 Assets/Retro[[:space:]]Cartoon[[:space:]]Car[[:space:]]Cicada filter=lfs diff=lfs merge=lfs -text
+Assets/Barmetler/** filter=lfs diff=lfs merge=lfs -text
