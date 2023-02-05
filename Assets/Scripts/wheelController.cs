@@ -9,9 +9,9 @@ public class wheelController : MonoBehaviour
     [SerializeField] WheelCollider backRightWheel;
     [SerializeField] WheelCollider backLeftWheel;
 
-    public float acceleration = 500f;
-    public float breakingForce = 300f;
-    public float maxTurnAngle = 30f;
+    public float acceleration = 3000f;
+    public float breakingForce = 1500f;
+    public float maxTurnAngle = 40f;
 
     private float currentAcceleration = 0f;
     private float currentBreakingForce = 0f;
