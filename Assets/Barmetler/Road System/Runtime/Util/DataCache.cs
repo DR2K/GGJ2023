@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:075099f90d487bd037b8f0c42eae31529d75b5160ec6810a53d1f68e225ba632
-size 522
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Barmetler
+{
+	public class DataCache<T> : InValidatable
+	{
+		T data;
+		bool valid = false;
+
+		public void SetData(T data)
+		{
+			this.data = data;
+			valid = true;
+		}
+
+		public T GetData()
+		{
+			if (!IsValid()) throw new System.Exception("Cache is invalid");
+			return data;
+		}
+
+		override public void OnInvalidate()
+		{
+			valid = false;
+		}
+
+		public bool IsValid()
+		{
+			return valid;
+		}
+	}
+}
